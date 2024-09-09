@@ -103,6 +103,11 @@ void AStar::ResetGrid(std::vector<std::vector<Node>>& grid,bool resetObstacles)
 		for (int j = 0; j < grid[0].size(); ++j)
 		{
 			Node* node = &grid[i][j];
+			node->fCost = 0;
+			node->gCost = 0;
+			node->hCost = 0;
+			node->parent = nullptr;
+
 			if (resetObstacles)
 			{
 				if (node->type != TARGET && node->type != START)

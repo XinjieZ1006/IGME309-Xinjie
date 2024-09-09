@@ -147,19 +147,23 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 	if (isMouseOnGrid && (hoveredCol*GRID_WIDTH != dragged->x || hoveredRow * GRID_HEIGHT != dragged->y))
 	{
-		if (grid[hoveredCol][hoveredRow].type == EMPTY)
+		if (grid[hoveredCol][hoveredRow].type != START && grid[hoveredCol][hoveredRow].type != TARGET)
 		{
 			if (isDraggingStart)
 			{
+				search.ResetGrid(grid, false);
 				dragged->type = EMPTY;
 				dragged = &grid[hoveredCol][hoveredRow];
 				dragged->type = START;
+				start = dragged;
 			}
 			else if (isDraggingTarget)
 			{
+				search.ResetGrid(grid, false);
 				dragged->type = EMPTY;
 				dragged = &grid[hoveredCol][hoveredRow];
 				dragged->type = TARGET;
+				target = dragged;
 			}
 			else
 			{

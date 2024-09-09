@@ -1,11 +1,11 @@
 ﻿  Astar.cpp
-C:\Users\arvon\source\repos\IGME309\HW1\src\Astar.cpp(19,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\HW1\src\Astar.cpp(19,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
-  HW1.vcxproj -> C:\Users\arvon\source\repos\IGME309\HW1\bin\HW1_debug.exe
+  HW1.vcxproj -> D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\HW1\bin\HW1_debug.exe
   
-  	                   2	D:\of_v0.12.0_vs_release\of_v0.12.0_vs_release\libs\fmod\lib\vs\x64\
-  	  *EXTRA File 		 6942208	C:\Users\arvon\source\repos\IGME309\HW1\bin\FreeImage.dll
+  	                   2	D:\Profiles\xz6596\Documents\of_v0.12.0_vs_release\libs\fmod\lib\vs\x64\
+  	  *EXTRA File 		 6942208	D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\HW1\bin\FreeImage.dll
   
-  	                   1	D:\of_v0.12.0_vs_release\of_v0.12.0_vs_release\libs\FreeImage\lib\vs\x64\
-  	  *EXTRA File 		 1826304	C:\Users\arvon\source\repos\IGME309\HW1\bin\fmod.dll
-  	  *EXTRA File 		 2041856	C:\Users\arvon\source\repos\IGME309\HW1\bin\fmodL.dll
+  	                   1	D:\Profiles\xz6596\Documents\of_v0.12.0_vs_release\libs\FreeImage\lib\vs\x64\
+  	  *EXTRA File 		 1826304	D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\HW1\bin\fmod.dll
+  	  *EXTRA File 		 2041856	D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\HW1\bin\fmodL.dll
