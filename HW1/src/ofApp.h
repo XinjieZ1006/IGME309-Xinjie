@@ -19,6 +19,8 @@ class ofApp : public ofBaseApp{
 		bool isSearched;
 		Node* dragged;
 
+		std::pair<int, int> originalStart;
+
 		// GUI components
 		//ofxPanel gui;
 		//ofxButton startButton;
