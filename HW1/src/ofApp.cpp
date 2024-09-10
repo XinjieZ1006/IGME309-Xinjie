@@ -113,8 +113,13 @@ void ofApp::draw(){
 	{
 		ss << "Search success! Path length: " << pathLength << std::endl;
 	}
+	stringstream notes;
+	ss << "Please do not overlap start and target!!\n Doing so will cause one of them to disappear!!!" << std::endl;
+	ss << "Also I haven't implemented code for erasing a single obstacle \nbut you can drag start or target as an eraser" << std::endl;
 	ofSetColor(0);
 	ofDrawBitmapString(ss.str().c_str(), 600, 20);
+	ofSetColor(255, 0, 0);
+	ofDrawBitmapString(notes.str().c_str(), 600, 200);
 }
 
 //--------------------------------------------------------------
