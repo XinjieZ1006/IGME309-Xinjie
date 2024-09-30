@@ -101,7 +101,7 @@ inline void mergeSort(std::vector<T>& list, int start, int end)
 {
 	if (start < end)
 	{
-		int mid = start + (start + end) / 2;
+		int mid = start + (end - start) / 2;
 		mergeSort(list, start, mid);
 		mergeSort(list, mid + 1, end);
 		merge(list, start, end, mid);
@@ -119,9 +119,9 @@ inline void merge(std::vector<T>& list, int start, int end, int mid)
 	{
 		leftList[i] = list[start + 1];
 	}
-	for (int j = 0; j < leftList.size(); ++j)
+	for (int j = 0; j < rightList.size(); ++j)
 	{
-		leftList[j] = list[mid + 1 + j];
+		rightList[j] = list[mid + 1 + j];
 	}
 	int i = 0, j = 0, k = start;
 	while (i < leftList.size() && j < rightList.size())
@@ -136,6 +136,7 @@ inline void merge(std::vector<T>& list, int start, int end, int mid)
 			list[k] = rightList[j];
 			j++;
 		}
+		k++;
 	}
 	while (i < leftSize)
 	{

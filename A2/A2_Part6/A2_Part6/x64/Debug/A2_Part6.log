@@ -1,15 +1,6 @@
 ﻿  A2_Part6.cpp
-C:\Users\arvon\source\repos\IGME309\A2\A2_Part6\A2_Part6\Matrix.h(39,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\arvon\source\repos\IGME309\A2\A2_Part6\A2_Part6\Matrix.h(38): message : while compiling class template member function 'Matrix<double>::Matrix(const std::vector<std::vector<T,std::allocator<T>>,std::allocator<std::vector<T,std::allocator<T>>>> &)'
-          with
-          [
-              T=double
-          ]
-C:\Users\arvon\source\repos\IGME309\A2\A2_Part6\A2_Part6\A2_Part6.cpp(31): message : see reference to function template instantiation 'Matrix<double>::Matrix(const std::vector<std::vector<T,std::allocator<T>>,std::allocator<std::vector<T,std::allocator<T>>>> &)' being compiled
-          with
-          [
-              T=double
-          ]
-C:\Users\arvon\source\repos\IGME309\A2\A2_Part6\A2_Part6\A2_Part6.cpp(31): message : see reference to class template instantiation 'Matrix<double>' being compiled
-C:\Users\arvon\source\repos\IGME309\A2\A2_Part6\A2_Part6\Matrix.h(40,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  A2_Part6.vcxproj -> C:\Users\arvon\source\repos\IGME309\A2\A2_Part6\x64\Debug\A2_Part6.exe
+D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part6\A2_Part6\Matrix.h(39,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part6\A2_Part6\Matrix.h(40,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Vector.cpp
+  Generating Code...
+  A2_Part6.vcxproj -> D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part6\x64\Debug\A2_Part6.exe
