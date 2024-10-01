@@ -4,7 +4,24 @@
 #include <iostream>
 #include <chrono>
 #include <time.h>
-#include "SortingMethods.h"
+#include <vector>
+
+template<typename T>
+void selectionSort(std::vector<T>& list);
+template<typename T>
+void insertionSort(std::vector<T>& list);
+template<typename T>
+void bubbleSort(std::vector<T>& list);
+template<typename T>
+void quickSort(std::vector<T>& list, int start, int end);
+// quick sort helper method
+template<typename T>
+int partition(std::vector<T>& list, int start, int end);
+template<typename T>
+void mergeSort(std::vector<T>& list, int start, int end);
+// merge sort helper
+template<typename T>
+void merge(std::vector<T>& list, int start, int end, int mid);
 using namespace std;
 
 template<typename T>
@@ -51,16 +68,23 @@ template<typename T>
 inline void bubbleSort(std::vector<T>& list)
 {
 	int size = list.size();
+	bool swapped;
 	// compare 2 adjacent elements, and swap as needed
 	for (int i = 0; i < size - 1; ++i)
 	{
+		swapped = false;
 		for (int j = i + 1; j < size; ++j)
 		{
 			// bigger element goes to the left
 			if (list[i] > list[j])
 			{
 				std::swap(list[i], list[j]);
+				swapped = true;
 			}
+		}
+		if (!swapped)
+		{
+			break;
 		}
 	}
 }
@@ -101,6 +125,7 @@ inline void mergeSort(std::vector<T>& list, int start, int end)
 {
 	if (start < end)
 	{
+		// divide into sub lists and merge sort them recursively
 		int mid = start + (end - start) / 2;
 		mergeSort(list, start, mid);
 		mergeSort(list, mid + 1, end);
@@ -113,18 +138,21 @@ inline void merge(std::vector<T>& list, int start, int end, int mid)
 {
 	int leftSize = mid - start + 1;
 	int rightSize = end - mid;
+	// set up left & right sub lists
 	vector<T> leftList(leftSize);
 	vector<T> rightList(rightSize);
-	for (int i = 0; i < leftList.size(); ++i)
+	//populate the list
+	for (int i = 0; i < leftSize; ++i)
 	{
-		leftList[i] = list[start + 1];
+		leftList[i] = list[start + i];
 	}
-	for (int j = 0; j < rightList.size(); ++j)
+	for (int j = 0; j < rightSize; ++j)
 	{
 		rightList[j] = list[mid + 1 + j];
 	}
 	int i = 0, j = 0, k = start;
-	while (i < leftList.size() && j < rightList.size())
+	// sort while merging back
+	while (i < leftSize && j < rightSize)
 	{
 		if (leftList[i] <= rightList[j])
 		{
@@ -141,14 +169,14 @@ inline void merge(std::vector<T>& list, int start, int end, int mid)
 	while (i < leftSize)
 	{
 		list[k] = leftList[i];
-		++k;
-		++i;
+		k++;
+		i++;
 	}
-	while (i < rightSize)
+	while (j < rightSize)
 	{
 		list[k] = rightList[j];
-		++k;
-		++j;
+		j++;
+		k++;
 	}
 }
 
@@ -239,15 +267,3 @@ int main()
         }
     }
 }
-
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

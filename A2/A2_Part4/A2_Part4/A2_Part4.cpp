@@ -16,7 +16,7 @@ public:
     int getSize();
     AnyClass& Peek();
     void Print();
-//protected:
+protected:
     AnyClass* queueArray;
     int size,capacity, front, rear;
 };

@@ -1,8 +1,11 @@
 ﻿  A2_Part2.cpp
-D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\A2_Part2\A2_Part2.cpp(195,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\A2_Part2\A2_Part2.cpp(227,75): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\A2_Part2\A2_Part2.cpp(230,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\A2_Part2\A2_Part2.cpp(53,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\A2_Part2\A2_Part2.cpp(16,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\A2_Part2\A2_Part2.cpp(37,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  A2_Part2.vcxproj -> D:\Profiles\xz6596\source\repos\XinjieZ1006\IGME309-Xinjie\A2\A2_Part2\x64\Debug\A2_Part2.exe
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(223,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(255,78): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(258,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(69,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(246): message : see reference to function template instantiation 'void bubbleSort<int>(std::vector<int,std::allocator<int>> &)' being compiled
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(32,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(249): message : see reference to function template instantiation 'void selectionSort<int>(std::vector<int,std::allocator<int>> &)' being compiled
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(53,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\A2_Part2\A2_Part2.cpp(252): message : see reference to function template instantiation 'void insertionSort<int>(std::vector<int,std::allocator<int>> &)' being compiled
+  A2_Part2.vcxproj -> C:\Users\arvon\source\repos\IGME309\A2\A2_Part2\x64\Debug\A2_Part2.exe
