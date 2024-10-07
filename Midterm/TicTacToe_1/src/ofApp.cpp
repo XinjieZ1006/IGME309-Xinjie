@@ -15,8 +15,6 @@ void ofApp::update(){
 	hoveredCol = mouseY / GRID_SIZE;
 	hoveredRow = mouseX / GRID_SIZE;
 	
-
-	std::cout << currentPlayer << endl;
 }
 
 //--------------------------------------------------------------

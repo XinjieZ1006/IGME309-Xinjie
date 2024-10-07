@@ -10,7 +10,6 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 	elapsedTime += ofGetLastFrameTime();
-	std::cout << elapsedTime << endl;
 	if (elapsedTime > duration)
 	{
 		elapsedTime = 0;
